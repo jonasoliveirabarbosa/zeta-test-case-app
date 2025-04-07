@@ -1,0 +1,11 @@
+services:
+  zetaap:
+    container_name: zetaap
+    image: jonas/nextjs
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    build: .
+    ports:
+      - 3000:3000
