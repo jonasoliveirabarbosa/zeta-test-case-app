@@ -4,4 +4,4 @@ COPY . .
 RUN yarn install
 RUN yarn build
 EXPOSE 3000
-CMD [ "npm" , "run" , "dev" ]
+CMD [ "yarn" , "run" , "dev" ]
